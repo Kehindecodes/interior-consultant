@@ -1,15 +1,18 @@
+const colors = require('tailwindcss/colors');
 module.exports = {
 	purge: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			black: {
-				DEFAULT: '#181719',
+			extend: {
+				primary: '#181719',
+				secondary: '#ffffff',
 			},
 		},
-		extend: {},
+		fontFamily: {
+			crimson: ['Crimson Pro', 'serif'],
+			mont: ['Montserrat', 'sans - serif'],
+		},
 	},
 	variants: {
 		extend: {},
