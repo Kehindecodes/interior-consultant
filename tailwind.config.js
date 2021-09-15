@@ -7,6 +7,7 @@ module.exports = {
 			extend: {
 				primary: '#181719',
 				secondary: '#ffffff',
+				title: '#828282',
 			},
 		},
 		fontFamily: {
@@ -16,9 +17,13 @@ module.exports = {
 		extend: {
 			width: {
 				img: '821.11px',
+				card: '410px',
+				profile: '85px',
 			},
 			height: {
 				img: '586.53px',
+				card: '189px',
+				profile: '85px',
 			},
 		},
 	},
