@@ -13,6 +13,14 @@ module.exports = {
 			crimson: ['Crimson Pro', 'serif'],
 			mont: ['Montserrat', 'sans - serif'],
 		},
+		extend: {
+			width: {
+				img: '821.11px',
+			},
+			height: {
+				img: '586.53px',
+			},
+		},
 	},
 	variants: {
 		extend: {},

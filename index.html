@@ -26,40 +26,59 @@
             
    
   </head>
-  <body class="w-full bg-extend-primary text-extend-secondary p-0 m-0 box-border ">
+  <body class="w-full bg-extend-primary text-extend-secondary p-0 m-0 box-border h-screen">
     <div class="container
      mx-auto px-3">
-    <nav class="py-7 flex justify-between">
+    <nav class="py-7 flex justify-between items-center">
       <div class="border border-extend-secondary  p-2">
         <p class=" uppercase">This Interior</p>
+      </div>
+      <div class="hidden sm:inline lg:hidden">
+        <img src="./images/menu(2).svg" alt="menu">
+       
       </div>
       <!-- nav links -->
       <div class="font-mont sm:hidden lg:block">
         <ul class="flex font-medium">
           <li class="ml-14">
-            <a href="#" class="">Home</a>
+            <a href="#" class=" no-underline hover:underline ">Home</a>
           </li>
           <li class="ml-14" >
-            <a href="#">Collection</a>
+            <a href="#" class="no-underline hover:underline">Collection</a>
           </li>
           <li class="ml-14">
-            <a href="#">About</a>
+            <a href="#" class="no-underline hover:underline" >About</a>
           </li>
-          <li class="ml-14" >
-            <a href="#">Contact</a>
+          <li class="ml-14"  >
+            <a  class=" no-underline hover:underline" href="#">Contact</a>
           </li>
         </ul>
       </div>
-      <div class="hidden sm:block lg:hidden">
-        <svg class="text-secondary">
-          <img src="./images/menu(2).svg" alt="menu">
-        </svg>
-       
-      </div>
-    </nav>
-    <main>
      
+    </nav>
+    <main class="flex my-16">
+      <!-- content -->
+     <div class="mr-4 mt-32" >
+       <h1 class="text-5xl font-bold font-crimson">
+        Modern interior
+       </h1>
+       <p class="font-mont my-12 text-2xl">A full-Service residential & <br>commercial interior design and <br>staging company offering <br> professional organizing & <br>eco-services.</p>
+       <div class="">
+         <p class="text-xl font-bold">Read more</p> <svg></svg>
+       </div>
+      
+      
+     </div>
+      <!-- hero image -->
+     <div class="w-img h-img">
+      <img class="w-full h-full" src="./images/photo1.png" alt="sitting room interior">
+    </div>
   </main>
+  <footer class="text-center font-mont">
+    <p>
+      created by <a href="https://github.com/kehindecodes" class="no-underline hover:underline">Oki kehinde</a>  - <a href="devChallenges.io" class="no-underline hover:underline">devChallenges.io</a> 
+    </p>
+  </footer>
   </div>
     
   </body>
