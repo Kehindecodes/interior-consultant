@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="m-0 p-0 box-border">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -26,19 +26,20 @@
             
    
   </head>
-  <body class="w-full bg-extend-primary text-extend-secondary p-0 m-0 box-border h-screen">
+  <body class="w-full bg-extend-primary text-extend-secondary p-0 m-0 box-border  flex flex-col min-h-screen">
     <div class="container
      mx-auto px-3">
+     <!-- navbar -->
     <nav class="py-7 flex justify-between items-center">
       <div class="border border-extend-secondary  p-2">
         <p class=" uppercase">This Interior</p>
       </div>
-      <div class="hidden sm:inline lg:hidden">
+      <div class="hidden sm-mobile:inline   lg-tablet:hidden cursor-pointer">
         <img src="./images/menu(2).svg" alt="menu">
        
       </div>
       <!-- nav links -->
-      <div class="font-mont sm:hidden lg:block">
+      <div class="font-mont block sm-mobile:hidden lg-tablet:block ">
         <ul class="flex font-medium">
           <li class="ml-14">
             <a href="#" class=" no-underline hover:underline ">Home</a>
@@ -56,28 +57,31 @@
       </div>
      
     </nav>
-    <main class="flex my-16">
+    <main class="flex  sm-mobile:flex-col laptop:flex-row my-16 sm-mobile:my-3 lg-tablet:flex-row  ">
       <!-- content -->
-     <div class="mr-4 mt-32" >
-       <h1 class="text-5xl font-bold font-crimson">
+     <div class="mr-24 mt-32 sm-mobile:mr-0 laptop:mr-24  lg-tablet:mr-16 lg-tablet:mt-32 sm-mobile:mt-3  laptop:mt-32 " >
+       <h1 class="text-5xl font-bold font-crimson sm-mobile:text-4xl lg-tablet:text-5xl ">
         Modern interior
        </h1>
-       <p class="font-mont my-12 text-2xl">A full-Service residential & <br>commercial interior design and <br>staging company offering <br> professional organizing & <br>eco-services.</p>
-       <div class="">
-         <p class="text-xl font-bold">Read more</p> <svg></svg>
+       <p class="font-mont my-12 text-2xl sm-mobile:text-sm laptop:text-2xl sm-mobile:my-6 laptop:my-12 ">A full-Service residential & <br>commercial interior design and <br>staging company offering <br> professional organizing & <br>eco-services.</p>
+       <div class="flex items-center cursor-pointer mb-6 ">
+         <p class="text-xl font-bold">Read more</p> 
+           <img src="./images/arrow_right_alt_white_24dp.svg" alt="left arrow" class="mt-2 ml-3">
+         
        </div>
       
       
      </div>
       <!-- hero image -->
-     <div class="w-img h-img relative ">
+     <div class="w-img h-img relative sm-mobile:w-full sm-mobile:h-mobile laptop:w-img laptop:h-img  lg-tablet:w-tab lg-tablet:h-img">
       <img class="w-full h-full" src="./images/photo1.png" alt="sitting room interior">
-      <div class="w-card h-card shadow-lg rounded-sm p-5 bg-extend-primary absolute -mt-28 right-4 b ">
+      <!-- card -->
+      <div class="w-card h-card shadow-lg rounded-sm p-5 bg-extend-primary absolute -mt-28 right-4 b  sm-mobile:w-cardMobile sm-mobile:h-cardMobile laptop:w-card laptop:h-card">
         <!-- profile details -->
         <div class="flex items-center">
               <!-- profile-img -->
-              <div class="w-profile h-profile mr-4 relative ">
-                <img class=" w-profile h-profile rounded-full" src="./images/photo2.png" alt="Aliza Webber">
+              <div class="w-profile h-profile mr-4 relative  sm-mobile:w-profileMob sm-mobile:h-profileMob">
+                <img class=" w-profile h-profile rounded-full sm-mobile:w-profileMob sm-mobile:h-profileMob" src="./images/photo2.png" alt="Aliza Webber">
               </div>
               <!-- profile details -->
               <div class="">
@@ -85,14 +89,14 @@
                 <small class="text-xs text-extend-title">Interior designer</small>
               </div>
         </div>
-        <div class="text-2xl break-words font-bold">
+        <div class="text-2xl break-words font-bold sm-mobile:text-lg laptop:text-2xl">
           <p>Designed in 2020 by<br> Aliza Webber</p>
         </div>
       </div>
     </div>
   </main>
-  <footer class="text-center font-mont mt-32">
-    <p>
+  <footer class="text-center font-mont p-10 mt-auto">
+    <p class="mt-12">
       created by <a href="https://github.com/kehindecodes" class="no-underline hover:underline">Oki kehinde</a>  - <a href="devChallenges.io" class="no-underline hover:underline">devChallenges.io</a> 
     </p>
   </footer>
