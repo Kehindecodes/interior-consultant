@@ -28,36 +28,63 @@
   </head>
   <body class="w-full bg-extend-primary text-extend-secondary p-0 m-0 box-border  h-screen">
     <div class="container
-     mx-auto px-3 flex flex-col min-h-screen">
+     mx-auto px-3 sm-mobile:px-2 lg-tablet:px-3 flex flex-col min-h-screen ">
      <!-- navbar -->
-    <nav class="py-7 flex justify-between items-center">
+    <nav class="py-7 flex justify-between items-center relative">
       <div class="border border-extend-secondary  p-2">
         <p class=" uppercase">This Interior</p>
       </div>
-      <div class="hidden sm-mobile:inline   lg-tablet:hidden cursor-pointer">
-        <img src="./images/menu(2).svg" alt="menu">
+     
+      <div id="hamburger_menu" class="hidden sm-mobile:inline   lg-tablet:hidden cursor-pointer absolute right-0 z-20">
+        <img src="./images/menu(2).svg" alt="hamburger menu">
        
       </div>
-      <!-- nav links -->
-      <div class="font-mont block sm-mobile:hidden lg-tablet:block ">
-        <ul class="flex font-medium">
-          <li class="ml-14">
-            <a href="#" class=" no-underline hover:underline ">Home</a>
-          </li>
-          <li class="ml-14" >
-            <a href="#" class="no-underline hover:underline">Collection</a>
-          </li>
-          <li class="ml-14">
-            <a href="#" class="no-underline hover:underline" >About</a>
-          </li>
-          <li class="ml-14"  >
-            <a  class=" no-underline hover:underline" href="#">Contact</a>
-          </li>
-        </ul>
+      <!-- nav links container -->
+      <div  id='link_wrapper' class=" block  sm-mobile:hidden lg-tablet:block
+      bg-extend-primary
+      sm-mobile:h-screen lg-tablet:h-full
+     
+		  sm-mobile: z-20    lg-tablet:z-0
+      sm-mobile: absolute  lg-tablet:relative
+		  sm-mobile: 	top-0
+		  sm-mobile:left-0
+			">
+        <!-- close btn -->
+        <div id="close_menu" class="hidden
+        sm-mobile:hidden
+        lg-tablet:hidden
+        cursor-pointer
+        absolute
+        right-8
+        top-8">
+          <img src="./images/x.svg" alt="close button" class="filter invert-100 sepia-0 saturate-7493 hue-rotate-149 brightness-104 contrast-102 ">
+         
+           
+        </div>
+      
+        <div  id= nav_wrapper class="font-mont block sm-mobile:hidden lg-tablet:block">
+          <ul class="flex font-medium sm-mobile:flex-col sm-mobile:items-center sm-mobile:justify-center sm-mobile:w-screen sm-mobile:h-screen  lg-tablet:flex-row lg-tablet:items-start lg-tablet:h-full lg-tablet:w-full">
+            <li class="ml-14 sm-mobile:ml-0 lg-tablet:ml-14 sm-mobile:mb-8  lg-tablet:mb-0 font-medium text-xl">
+              <a href="#" class=" no-underline hover:underline ">Home</a>
+            </li>
+            <li class="ml-14 sm-mobile:ml-0 lg-tablet:ml-14 sm-mobile:mb-8 sm-mobile:font-medium sm-mobile:text-xl" >
+              <a href="#" class="no-underline hover:underline">Collection</a>
+            </li>
+            <li class="ml-14 sm-mobile:ml-0 lg-tablet:ml-14 sm-mobile:mb-8 sm-mobile:font-medium sm-mobile:text-xl">
+              <a href="#" class="no-underline hover:underline" >About</a>
+            </li>
+            <li class="ml-14 sm-mobile:ml-0 lg-tablet:ml-14 sm-mobile:mb-8 sm-mobile:font-medium sm-mobile:text-xl"  >
+              <a  class=" no-underline hover:underline" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
      
+      <!-- nav links -->
+    
+     
     </nav>
-    <main class="flex  sm-mobile:flex-col laptop:flex-row my-16 sm-mobile:my-3 lg-tablet:flex-row  ">
+    <main class="flex  sm-mobile:flex-col laptop:flex-row my-16 sm-mobile:my-3 lg-tablet:flex-row z-10">
       <!-- content -->
      <div class="mr-24 mt-32 sm-mobile:mr-0 laptop:mr-24  lg-tablet:mr-16 lg-tablet:mt-32 sm-mobile:mt-3  laptop:mt-32 " >
        <h1 class="text-5xl font-bold font-crimson sm-mobile:text-4xl lg-tablet:text-5xl ">
@@ -102,5 +129,6 @@
   </footer>
   </div>
     
+  <script src="./js/index.js"></script>
   </body>
 </html>

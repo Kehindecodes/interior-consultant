@@ -32,6 +32,21 @@ module.exports = {
 				cardMobile: '138px',
 				profileMob: '52.68px',
 			},
+			hueRotate: {
+				149: '149deg',
+			},
+			invert: {
+				100: '100%',
+			},
+			saturate: {
+				7493: '7493%',
+			},
+			brightness: {
+				104: '104%',
+			},
+			contrast: {
+				102: '102%',
+			},
 		},
 		screens: {
 			'sm-mobile': '320px',
