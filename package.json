@@ -11,9 +11,11 @@
   },
   "devDependencies": {
     "vite": "^2.5.7"
+    
   },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC"
